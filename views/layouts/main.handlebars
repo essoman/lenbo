@@ -1,11 +1,23 @@
 <!doctype html>
 <html>
 <head>
+
+    {{>head}}
     <title>lenbo</title>
+
+<script src="//code.jquery.com/jquery-2.0.2.min.js"></script>
 </head>
 
 <body>
-    <header><img src="/img/lenbo.png" alt="lenbo Logo"></header>
 
+    {{>navbar}}
+    
+
+<div class="container"
+    {{{body}}}
+</div>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
 </html>
+ 

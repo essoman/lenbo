@@ -1,0 +1,25 @@
+{
+  "name": "lenbo",
+  "version": "1.0.0",
+  "description": "Lenbo application ",
+  "private":true,
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/essoman/lenbo.git"
+  },
+  "author": "essoMan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/essoman/lenbo/issues"
+  },
+  "homepage": "https://github.com/essoman/lenbo#readme",
+  "dependencies": {
+    "express": "^4.15.3",
+    "express3-handlebars": "^0.5.2",
+    "handlebars": "^4.0.10"
+  }
+}
