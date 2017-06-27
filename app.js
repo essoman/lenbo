@@ -1,7 +1,9 @@
 var express     = require('express');
 var app         = express();
 
-var handlebars = require('express-handlebars') .create({ defaultLayout:'main' });
+var session     = require('express-session');
+var parseurl    = require(parseurl);
+var handlebars  = require('express-handlebars') .create({ defaultLayout:'main' });
     app.engine('handlebars', handlebars.engine);
     app.set('view engine', 'handlebars');
 
@@ -24,7 +26,7 @@ app.post('/process', function(req, res){
     console.log('CSRF token : ' + req.body._csrf);
     console.log('Email : '  + req.body.email);
     console.log('Question: ' + req.body.ques);
-    res.redirect(303, '/thankyou');
+    res.redirect(303, '/thankyou')
 });
 
 app.listen(3000)
